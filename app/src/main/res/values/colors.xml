@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0B3B17</color>
+    <color name="colorBackgroundLista">#F2F3F4</color>
+    <color name="colorSeparadorLista">#000000</color>
+    <color name="colorTextoBotonAgregarListaFragment">#FFFFFF</color>
+    <color name="colorBackgroundBotonAgregarListaFragment">#000000</color>
+    <color name="colorBackgroundLabels">#D5DBDB</color>
+</resources>

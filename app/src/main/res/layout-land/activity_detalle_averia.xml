@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfazusuario.ActivityDetalleAveria"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Id Avería:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvIdAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvNombreAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvTipoAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvFechaAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvDescripcionAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:id="@+id/tvUsuarioAveriaDetalles"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUbicacionLatitudDetalles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latitud: "
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/tvUbicacionLongitudDetalles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longitud: "
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/ivImagenDetalles"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/btnEditarAveria"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" Editar "
+                    android:padding="10dp"
+                    android:textColor="@color/colorTextoBotonAgregarListaFragment"
+                    android:background="@color/colorSeparadorLista"/>
+
+                <Button
+                    android:id="@+id/btnBorrarAveria"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text=" Eliminar "
+                    android:padding="10dp"
+                    android:textColor="@color/colorTextoBotonAgregarListaFragment"
+                    android:background="@color/colorSeparadorLista"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfazusuario.ActivityCrearAveria"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etNombreAveriaCrear"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etTipoAveriaCrear"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Fecha: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/etFechaAveriaCrear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.75"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etDescripcionAveriaCrear"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.25"
+                    android:layout_height="wrap_content"
+                    android:text="Ubicación: "
+                    android:textSize="15dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.75"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvUbicacionLatitudCrear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Latitud: "
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/tvUbicacionLongitudCrear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Longitud: "
+                        android:layout_marginTop="5dp"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnTomarFoto"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/img_photo2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/ivImagenCrear"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/btnCrearAveria"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" Guardar "
+                    android:layout_weight="1"
+                    android:textColor="@color/colorTextoBotonAgregarListaFragment"
+                    android:background="@color/colorSeparadorLista"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

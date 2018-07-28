@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".interfazusuario.ActivityRegistro"
+    android:padding="6dp"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            //layout de elementos de nombre
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre:"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etNombre"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            //layout de elementos de correo
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Correo:"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            //layout de elementos de telefono
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono:"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etTelefono"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="8"/>
+            </LinearLayout>
+
+            //layout de elementos de cédula
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Núm. Cédula:"
+                    android:maxLength="9"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etCedula"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:digits="0123456789"/>
+            </LinearLayout>
+
+            //layout de elementos de nombre usuario
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Usuario :"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etUsuario"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            //layout de elementos de contrasena
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Contraseña :"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etContrasena"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            //layout de elementos de contrasena
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmar Contraseña :"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:id="@+id/etConfirmaContrasena"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnRegistrar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Registrar"
+                    android:textColor="@color/colorTextoBotonAgregarListaFragment"
+                    android:background="@color/colorSeparadorLista"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
